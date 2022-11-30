@@ -10,14 +10,14 @@
   outputs = inputs: {
     defaultPackage.x86_64-linux = home-manager.defaultPackage.x86_64-linux;
     defaultPackage.x86_64-darwin = home-manager.defaultPackage.x86_64-darwin;
-
+ 
     homeConfigurations = {
       "gsorchini" = inputs.home-manager.lib.homeManagerConfiguration {
-        system = "aarch64-darwin";
-        homeDirectory = "/home/gsorchini";
-        username = "gsorchini";
+        system = "aarch64-darwin"; # TODO: replace with x86_64-linux on Linux
+        homeDirectory = "/home/gsorchini"; # TODO: make this match your home directory
+        username = "gsorchini"; # TODO: Change to your username
         configuration.imports = [ ./home.nix ];
-      }:
+      };
     };
   };
 }
