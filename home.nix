@@ -12,7 +12,6 @@
     # fonts
     pkgs.fira-code
     pkgs.roboto-mono
-    # (pkgs.nerdfonts.override { fonts = ["FiraCode" "RobotoMono"];})
 
     # else
     pkgs.nixpkgs-fmt
@@ -34,6 +33,15 @@
   programs.emacs.enable = true;
   programs.emacs.extraPackages = epkgs: with epkgs; [
     nano-theme
+    spacemacs-theme
+    simple-httpd
+    org-roam
+    dash
+    f
+    s
+    emacsql
+    emacsql-sqlite
+    magit-section
   ];
 
   fonts.fontconfig.enable = true;
