@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored"
+ (filename . "~/Roam-ing/20230306151139-cinetrack_system_design.org")
+ (front-context-string)
+ (rear-context-string . "k System Design\n")
+ (position . 101))
+("org-refile-last-stored"
+ (filename . "~/desktop/gitlab/learning-org-mode/headlines_and_outline_mode.org")
+ (front-context-string . "** This one shou")
+ (rear-context-string)
+ (position . 14))
+)

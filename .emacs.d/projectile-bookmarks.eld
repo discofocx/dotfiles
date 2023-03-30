@@ -1,0 +1,1 @@
+("~/Projects/hello-egui/" "~/Projects/gitlab/sync-and-mux/" "~/Projects/hello_emacs/")
