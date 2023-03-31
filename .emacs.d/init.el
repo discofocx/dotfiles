@@ -8,6 +8,10 @@
 (column-number-mode)
 (global-display-line-numbers-mode t)  ; Enable the line numbers
 
+;; Instruct Emacs to write auto-save files to a different dir
+(setq auto-save-file-name-transforms
+          `((".*" ,(concat user-emacs-directory "auto-save/") t))) 
+
 ;; Disable line numbers for some modes
 (dolist (mode '(org-mode-hook
                 term-mode-hook
@@ -22,8 +26,6 @@
 ;; Fonts
 (set-face-attribute 'default nil :font "Fira Code" :height 140)
 
-;; Set theme
-(load-theme 'doom-dracula t)
 
 ;; Make ESC quit prompts
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
@@ -89,6 +91,9 @@
 
 (use-package all-the-icons)
 
+;; Set theme
+(load-theme 'doom-dracula t)
+
 ;; use rainbow-delimiters
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
@@ -135,7 +140,7 @@
 (use-package org-roam
   :ensure t
   :custom
-  (org-roam-directory "~/my-org-roam")
+  (org-roam-directory "~/my-org-roam/org-roam")
   :bind (("C-c n l" . org-roam-buffer-toggle)
 	 ("C-c n f" . org-roam-node-find)
 	 ("C-c n i" . org-roam-node-insert))
