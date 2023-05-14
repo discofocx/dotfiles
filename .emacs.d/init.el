@@ -148,7 +148,7 @@
   (org-roam-setup))
 
 ;; rust-mode
-(require 'rust-mode)
+;; (require 'rust-mode)
 
 
 ;; LateX Rules
@@ -161,8 +161,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files
-   '("~/Desktop/gitlab/learning-org-mode/schedule_deadlines_agenda.org"))
+ '(org-agenda-files nil)
  '(package-selected-packages
    '(magit rust-mode projectile general all-the-icons doom-themes ivy-rich which-key rainbow-delimiters doom-modeline counsel ivy command-log-mode use-package spacemacs-theme simple-httpd org-roam nano-theme f)))
 (custom-set-faces
@@ -171,3 +170,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
